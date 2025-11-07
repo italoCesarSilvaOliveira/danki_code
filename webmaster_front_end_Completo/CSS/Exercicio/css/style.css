@@ -7,8 +7,131 @@
 body {
   background-color: cadetblue;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section p {
   border: 2px solid black;
+}
+
+#header {
+  background-color: green;
+}
+
+.destaque {
+  color: yellow;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+ul li {
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  background-color: orange;
+}
+
+header h2 {
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+header h2:hover {
+  letter-spacing: 5px;
+  transition: 0.3s;
+}
+
+div {
+  width: 50%;
+  height: 300px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.lista-numerada {
+  margin: 0 20px;
+}
+
+.lista-numerada li {
+  list-style: none;
+  counter-increment: section;
+  margin: 10px;
+}
+
+.lista-numerada li::before {
+  content: counter(section) ". ";
+  color: red;
+  font-weight: bold;
+}
+
+.botao {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+img {
+  max-width: 90%;
+}
+
+.caixa {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid green;
+}
+
+.caixa1 {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.float1 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.float2 {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+.float3 {
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  margin: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.maiorque200 {
+  width: 250px;
+  height: 150px;
+  background-color: purple;
+
+  overflow: scroll;
 }
