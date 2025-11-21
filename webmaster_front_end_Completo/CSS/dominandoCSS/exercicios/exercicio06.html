@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    ul li {
+      background-color: lightcoral;
+      height: 50px;
+      transition: all 0.5s ease;
+
+    }
+
+    ul li:hover {
+      cursor: pointer;
+      transition: all 0.5s ease;
+      background-color: crimson;
+    }
+
+    ul li:first-child:hover {
+      background-color: orange;
+    }
+
+    ul li:last-child:hover {
+      background-color: green;
+    }
+
+    ul li:nth-child(odd):hover {
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>

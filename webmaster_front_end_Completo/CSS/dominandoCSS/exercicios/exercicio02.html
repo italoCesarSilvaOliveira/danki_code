@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    input[required] {
+      padding: 8px;
+      border: none;
+      background-color: yellow;
+      border-radius: 4px;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+      opacity: 0.60;
+      color: black;
+      font-weight: bold;
+      cursor: not-allowed;
+    }
+
+    select[data-type="primary"] {
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="text" required>
+    <button disabled>Enviar</button>
+    <select name="" data-type="primary">
+      <option value="">Opção 1</option>
+      <option value="">Opção 2</option>
+      <option value="">Opção 3</option>
+    </select>
+  </form>
+</body>
+</html>

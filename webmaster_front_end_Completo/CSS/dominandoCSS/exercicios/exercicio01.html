@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 10px;
+        transition: transform 0.3s ease;
+        margin: 20px auto;
+        color: blue;
+      }
+
+      div:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+      div:nth-child(2) {
+        color: inherit;
+      }
+
+      div:nth-child(3) {
+        color: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <div>TEXTO</div>
+    <div>TEXTO</div>
+    <div>TEXTO</div>
+  </body>
+</html>

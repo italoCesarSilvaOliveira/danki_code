@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f0f0f0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        margin: auto;
+        border: 3px solid black;
+        padding: 200px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      input,
+      select,
+      textarea {
+        border: 2px solid gray;
+        border-radius: 20px;
+        background-color: white;
+      }
+
+      button {
+        border: none;
+        border-radius: 16px;
+        background-color: lightgreen;
+        cursor: pointer;
+        width: 13vw;
+        height: 3vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      button:hover {
+        box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+        background-color: brown;
+        color: white;
+      }
+
+      input:focus {
+        border: 3px solid blue;
+        outline: none;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"],
+      input[type="file"] {
+        width: auto;
+        margin-right: 10px;
+      }
+
+      .checkbox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        /* background-color: aqua; */
+        justify-content: center;
+      }
+
+      .checkbox input[type="checkbox"] {
+        margin-bottom: 5px;
+        background-color: yellow;
+        width: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <select name="" id="">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </select>
+      <textarea name="" id=""></textarea>
+      <button>CLICK HERE!</button>
+    </form>
+
+    <form>
+      <div class="checkbox">
+        <input type="checkbox" name="1" id="primeiro"/> 
+        <label for="primeiro"> Primeiro</label>
+        
+        <input type="checkbox" name="2" id="segundo" /> 
+        <label for="segundo"> Segundo</label>
+
+        <input type="checkbox" name="3" id="terceiro" /> 
+        <label for="tereceiro"> Terceiro</label>
+      </div>
+
+      <div class="radio">
+        <input type="radio"/> Teste 1 <input type="radio" /> Teste 2
+        <input type="radio" /> Teste 3
+      </div>
+
+      <input type="file" /> Upload file
+    </form>
+  </body>
+</html>
